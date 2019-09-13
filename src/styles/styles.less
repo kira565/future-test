@@ -1,0 +1,47 @@
+//compress: true
+@import "vars";
+@import "btn";
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.all-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.inactive {
+  position: fixed; /* фиксированное положение */
+  display: block;
+  top: -13%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1050;
+  background: #555555;
+  opacity: 0.5; /* по умолчанию модальное окно прозрачно */
+  -webkit-transition: opacity 200ms ease-in;
+  -moz-transition: opacity 200ms ease-in;
+  transition: opacity 200ms ease-in; /* анимация перехода */
+  pointer-events: none; /* элемент невидим для событий мыши */
+  margin: 0;
+  padding: 0;
+  @media (max-width: 767px) {
+    top: -20%;
+  }
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+//BLocks
+@import "blocks/Header";
+@import "blocks/Main";
+@import "blocks/Footer";
+@import "blocks/ModalWindow";
+

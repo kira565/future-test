@@ -1,0 +1,53 @@
+//main: ../styles.less
+.header {
+  &__nav {
+    padding-top: 2.5%;
+    padding-bottom: 3%;
+    .tel {
+      color: @graytext;
+    }
+    .svg-logo {
+      @media (max-width: 767px) {
+      }
+    }
+  }
+  &__offer {
+    background: url("../../../src/etc/img/helimain2.jpg") no-repeat center top / cover;
+    height: 840px;
+    max-width: 1916px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .title {
+      font-size: 40px;
+      color: white;
+      font-style: normal;
+      font-weight: bold;
+      margin-bottom: 15px;
+      @media (max-width: 767px) {
+        font-size: 32px;
+      }
+    }
+    .price {
+      color: white;
+      background: url("../../../src/etc/img/chat.png") no-repeat center top / contain;
+      height: 96px;
+      width: 224px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 15px;
+      &__text {
+        display: flex;
+        flex-direction: column;
+        .sum {
+          font-weight: bold;
+          font-size: 35px;
+          margin-top: -10px;
+        }
+      }
+    }
+  }
+}
+
